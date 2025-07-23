@@ -1,0 +1,19 @@
+[versions]
+versionName = "1.0.0-beta1"
+
+minSdk = "21"
+compileSdk = "35"
+jvmTarget = "17"
+
+androidVersion = "8.8.2"
+kotlinVersion = "1.9.24"
+annotationVersion = "1.9.1"
+kotlinxCoroutinesCoreVersion = "1.7.3"
+
+[libraries]
+androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "annotationVersion" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCoreVersion" }
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "androidVersion" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
